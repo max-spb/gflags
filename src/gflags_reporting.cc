@@ -281,10 +281,10 @@ static void ShowUsageWithFlagsMatching(const char *argv0,
       if (flag->filename != last_filename) {                      // new file
         if (Dirname(flag->filename) != Dirname(last_filename)) {  // new dir!
           if (!first_directory)
-            fprintf(stdout, "\n\n");   // put blank lines between directories
+//            fprintf(stdout, "\n\n");   // put blank lines between directories
           first_directory = false;
         }
-        fprintf(stdout, "\n  Flags from %s:\n", flag->filename.c_str());
+//        fprintf(stdout, "\n  Flags from %s:\n", flag->filename.c_str());
         last_filename = flag->filename;
       }
       // Now print this flag
@@ -292,7 +292,7 @@ static void ShowUsageWithFlagsMatching(const char *argv0,
     }
   }
   if (!found_match && !substrings.empty()) {
-    fprintf(stdout, "\n  No modules matched: use -help\n");
+//    fprintf(stdout, "\n  No modules matched: use -help\n");
   }
 }
 

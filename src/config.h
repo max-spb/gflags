@@ -3,7 +3,7 @@
 #ifndef GFLAGS_CONFIG_H_
 #define GFLAGS_CONFIG_H_
 
-
+#define STRIP_FLAG_HELP 1
 // ---------------------------------------------------------------------------
 // System checks
 
